@@ -1023,22 +1023,29 @@ header .container{
     padding: 0;
 }
 
-.mobile-menu-overlay {
+.menu-modal-overlay {
     position: fixed;
     top: 0;
-    right: -100%;
-    /* ховаємо за екраном */
-    width: 250px;
+    left: 0;
+    width: 100%;
     height: 100%;
     background-color: #fff;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-overlay.is-open {
-    right: 0;
-    /* меню видно */
+.menu-modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .menu-container {
@@ -1169,6 +1176,7 @@ body {
         justify-content: center;
         margin: 0 auto;
         align-items: flex-end;
+        gap: 24px;
     }
 
     .footer-input{
