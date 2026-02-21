@@ -35,6 +35,17 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <defs>
+        <symbol id="icon-heroicons-solid_menu" viewBox="0 0 33 32">
+          <path
+            d="M4.816 8.001c0-0.424 0.169-0.831 0.47-1.131s0.71-0.469 1.135-0.469h19.267c0.426 0 0.834 0.169 1.135 0.469s0.47 0.707 0.47 1.131-0.169 0.831-0.47 1.131c-0.301 0.3-0.709 0.469-1.135 0.469h-19.267c-0.426 0-0.834-0.169-1.135-0.469s-0.47-0.707-0.47-1.131z">
+          </path>
+          <path
+            d="M4.816 16.001c0-0.424 0.169-0.831 0.47-1.131s0.71-0.469 1.135-0.469h19.267c0.426 0 0.834 0.169 1.135 0.469s0.47 0.707 0.47 1.131c0 0.424-0.169 0.831-0.47 1.131s-0.709 0.469-1.135 0.469h-19.267c-0.426 0-0.834-0.169-1.135-0.469s-0.47-0.707-0.47-1.131z">
+          </path>
+          <path
+            d="M4.816 24.001c0-0.424 0.169-0.831 0.47-1.131s0.71-0.469 1.135-0.469h19.267c0.426 0 0.834 0.169 1.135 0.469s0.47 0.707 0.47 1.131c0 0.424-0.169 0.831-0.47 1.131s-0.709 0.469-1.135 0.469h-19.267c-0.426 0-0.834-0.169-1.135-0.469s-0.47-0.707-0.47-1.131z">
+          </path>
+        </symbol>
         <symbol id="icon-default-chbox" viewBox="0 0 32 32">
           <path
             class="icon-checbox-style"
@@ -299,6 +310,9 @@
             </li>
           </ul>
         </address>
+        <svg class="menu-icon" height="25" width="25">
+          <use href="#icon-heroicons-solid_menu"></use>
+        </svg>
       </div>
     </header>
 
@@ -318,7 +332,7 @@
           <ul class="our-features-list">
             <li class="our-features-item">
               <div class="icon-bg">
-                <svg class="icon" height="64" width="64">
+                <svg class="features-icon" height="64" width="64">
                   <use href="./images/icons.svg#icon-strategy"></use>
                 </svg>
               </div>
@@ -330,7 +344,7 @@
             </li>
             <li class="our-features-item">
               <div class="icon-bg">
-                <svg class="icon" height="64" width="64">
+                <svg class="features-icon" height="64" width="64">
                   <use href="./images/icons.svg#icon-punctuality"></use>
                 </svg>
               </div>
@@ -342,7 +356,7 @@
             </li>
             <li class="our-features-item">
               <div class="icon-bg">
-                <svg class="icon" height="64" width="64">
+                <svg class="features-icon" height="64" width="64">
                   <use href="./images/icons.svg#icon-diligense"></use>
                 </svg>
               </div>
@@ -354,7 +368,7 @@
             </li>
             <li class="our-features-item">
               <div class="icon-bg">
-                <svg class="icon" height="64" width="64">
+                <svg class="features-icon" height="64" width="64">
                   <use href="./images/icons.svg#icon-technologies"></use>
                 </svg>
               </div>
@@ -370,7 +384,7 @@
 
       <section class="section">
         <!--Our team-->
-        <div class="container">
+        <div class="container our-team-container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-element">
@@ -614,36 +628,36 @@
         </div>
       </section>
 
+
       <section class="section">
         <!--Our portfolio-->
         <div class="container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
           <ul class="our-portfolio-list">
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/BankingApp.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Banking App"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/BankingApp.jpg 1x, ./images/BankingApp.jpg 2x"
+                  src="./images/BankingApp.jpg" 
+                  alt="image for Banking App" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
-
               <div class="our-portfolio-block">
                 <h3 class="our-portfolio-name">Banking App</h3>
                 <p class="our-portfolio-text">App</p>
               </div>
             </li>
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/CashlessPayment.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Cashless Payment"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/CashlessPayment.jpg 1x, ./images/CashlessPayment.jpg 2x"
+                  src="./images/CashlessPayment.jpg" 
+                  alt="image for Cashless Payment" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
@@ -652,14 +666,14 @@
                 <p class="our-portfolio-text">Marketing</p>
               </div>
             </li>
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/MeditationApp.jpg 1x, ./images/MeditationApp.jpg 2x"
                   src="./images/MeditationApp.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Meditation App"
+                  alt="image for Meditation App" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
@@ -668,14 +682,14 @@
                 <p class="our-portfolio-text">App</p>
               </div>
             </li>
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/TaxiService.jpg 1x, ./images/TaxiService.jpg 2x"
                   src="./images/TaxiService.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Taxi Service"
+                  alt="image for Taxi Service" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
@@ -684,14 +698,14 @@
                 <p class="our-portfolio-text">Marketing</p>
               </div>
             </li>
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/ScreenIllustrations.jpg 1x, ./images/ScreenIllustrations.jpg 2x"
                   src="./images/ScreenIllustrations.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Screen Illustrations"
+                  alt="image for Screen Illustrations" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
@@ -700,14 +714,14 @@
                 <p class="our-portfolio-text">Design</p>
               </div>
             </li>
+            
             <li class="our-portfolio-item">
               <div class="box">
-                <img
-                  class="our-portfolio-img"
+                <img 
+                  class="our-portfolio-img" 
+                  srcset="./images/OnlineCourses.jpg 1x, ./images/OnlineCourses.jpg 2x"
                   src="./images/OnlineCourses.jpg"
-                  width="360"
-                  height="300"
-                  alt="image for Online Courses"
+                  alt="image for Online Courses" 
                 />
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
@@ -722,73 +736,59 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-content">
-          <div class="footer-column">
-            <a class="logo logo--footer" href="./index.html"
-              ><span class="logo-accent">Web</span>Studio</a
-            >
-            <p class="page-footer-text">
-              Increase the flow of customers and sales for your business with
-              digital marketing &#38; growth solutions.
-            </p>
-          </div>
+          <div class="footer-content-with-social-links">
+            <div class="footer-column logo-content">
+              <a class="logo logo--footer" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+              <p class="page-footer-text">
+                Increase the flow of customers and sales for your business with
+                digital marketing &#38; growth solutions.
+              </p>
+            </div>
 
-          <div class="footer-column">
-            <p class="footer-sl-text">Social media</p>
-
-            <ul class="footer-social-links">
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg class="icon" height="24" width="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg class="icon" height="24" width="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com/" target="_blank" class="link">
-                  <svg class="icon" height="24" width="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg class="icon" height="24" width="24">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="footer-column sl-content">
+              <p class="footer-sl-text">Social media</p>
+              
+              <ul class="footer-social-links">
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank" class="link">
+                    <svg class="icon" height="24" width="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank" class="link">
+                    <svg class="icon" height="24" width="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/" target="_blank" class="link">
+                    <svg class="icon" height="24" width="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank" class="link">
+                    <svg class="icon" height="24" width="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+          
           <div class="footer-column">
-            <p class="footer-sl-text">Subscribe</p>
             <form class="footer-subscribe">
-              <input
-                class="footer-input"
-                type="email"
-                name="mail"
-                placeholder="E-mail"
-              />
+              <span class="footer-input-label">
+                <label class="footer-sl-text" for="mail">Subscribe</label>
+                <input class="footer-input" type="email" name="mail" placeholder="E-mail" />
+              </span>
               <button class="footer-button" type="submit">
                 Subscribe
                 <svg class="icon icon-send" height="24" width="24">
@@ -797,12 +797,13 @@
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </footer>
 
     <!--Modal window-->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="icon icon-modal-close" height="8" width="8">
@@ -883,6 +884,69 @@
             <button class="modal-button" type="submit">Send</button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <!--Menu Modal window-->
+    <div class="modal-overlay menu-modal-overlay">
+      <div class="modal menu-modal">
+        <button class="modal-close" type="button">
+          <svg class="icon icon-modal-close" height="8" width="8">
+            <use href="./images/icons.svg#icon-closep"></use>
+          </svg>
+        </button>
+
+        <nav class="navigation menu-navigation">
+          <ul class="navigation-list menu-navigation-list">
+            <li>
+              <a class="navigation-link-studio menu-navigation-link-studio current" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="navigation-link menu-navigation-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li><a class="navigation-link menu-navigation-link" href="#Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="nav-address menu-nav-address">
+          <ul class="nav-address-list menu-nav-address-list">
+            <li>
+              <a class="nav-address-link menu-nav-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="nav-address-link menu-nav-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="social-links menu-social-links">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" class="link">
+              <svg class="icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" class="link">
+              <svg class="icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank" class="link">
+              <svg class="icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" class="link">
+              <svg class="icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
