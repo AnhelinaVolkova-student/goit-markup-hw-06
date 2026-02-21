@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!--modern-normalize*-->
@@ -11,19 +11,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
       integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer">
 
     <!--Fonts Roboto and Raleway-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    />
+    >
 
     <!--Conect styles.css-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!--icons start-->
@@ -310,9 +309,11 @@
             </li>
           </ul>
         </address>
-        <svg class="menu-icon" height="25" width="25">
-          <use href="#icon-heroicons-solid_menu"></use>
-        </svg>
+        <button class="burger-button" type="button">
+          <svg class="menu-icon" height="24" width="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -390,11 +391,12 @@
             <li class="our-team-element">
               <img
                 class="our-team-img"
+                srcset="./images/MarkGuerrero.jpg 1x, ./images/MarkGuerrero@2.jpg 2x"
                 src="./images/MarkGuerrero.jpg"
                 width="264"
                 height="260"
                 alt="Foto Mark Guerrero"
-              />
+              >
               <div class="our-team-block">
                 <h3 class="our-team-name">Mark Guerrero</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -450,11 +452,12 @@
             <li class="our-team-element">
               <img
                 class="our-team-img"
+                srcset="./images/TomFord.jpg 1x, ./images/TomFord@2.jpg 2x"
                 src="./images/TomFord.jpg"
                 width="264"
                 height="260"
                 alt="Foto Tom Ford"
-              />
+              >
               <div class="our-team-block">
                 <h3 class="our-team-name">Tom Ford</h3>
                 <p class="our-team-text">Frontend Developer</p>
@@ -509,11 +512,12 @@
             <li class="our-team-element">
               <img
                 class="our-team-img"
+                srcset="./images/CamilaGarcia.jpg 1x, ./images/CamilaGarcia@2.jpg 2x"
                 src="./images/CamilaGarcia.jpg"
                 width="264"
                 height="260"
                 alt="Foto Camila Garcia"
-              />
+              >
               <div class="our-team-block">
                 <h3 class="our-team-name">Camila Garcia</h3>
                 <p class="our-team-text">Marketing</p>
@@ -568,11 +572,12 @@
             <li class="our-team-element">
               <img
                 class="our-team-img"
+                srcset="./images/DanielWilson.jpg 1x, ./images/DanielWilson@2.jpg 2x"
                 src="./images/DanielWilson.jpg"
                 width="264"
                 height="260"
                 alt="Foto Daniel Wilson"
-              />
+              >
               <div class="our-team-block">
                 <h3 class="our-team-name">Daniel Wilson</h3>
                 <p class="our-team-text">UI Designer</p>
@@ -639,10 +644,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/BankingApp.jpg 1x, ./images/BankingApp.jpg 2x"
+                  srcset="./images/BankingApp.jpg 1x, ./images/BankingApp@2.jpg 2x"
                   src="./images/BankingApp.jpg" 
-                  alt="image for Banking App" 
-                />
+                  alt="image for Banking App"
+                  width="360"
+                  height="300" 
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -655,10 +662,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/CashlessPayment.jpg 1x, ./images/CashlessPayment.jpg 2x"
+                  srcset="./images/CashlessPayment.jpg 1x, ./images/CashlessPayment@2.jpg 2x"
                   src="./images/CashlessPayment.jpg" 
-                  alt="image for Cashless Payment" 
-                />
+                  alt="image for Cashless Payment"
+                  width="360"
+                  height="300" 
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -671,10 +680,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/MeditationApp.jpg 1x, ./images/MeditationApp.jpg 2x"
+                  srcset="./images/MeditationApp.jpg 1x, ./images/MeditationApp@2.jpg 2x"
                   src="./images/MeditationApp.jpg"
                   alt="image for Meditation App" 
-                />
+                  width="360"
+                  height="300"
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -687,10 +698,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/TaxiService.jpg 1x, ./images/TaxiService.jpg 2x"
+                  srcset="./images/TaxiService.jpg 1x, ./images/TaxiService@2.jpg 2x"
                   src="./images/TaxiService.jpg"
                   alt="image for Taxi Service" 
-                />
+                  width="360"
+                  height="300"
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -703,10 +716,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/ScreenIllustrations.jpg 1x, ./images/ScreenIllustrations.jpg 2x"
+                  srcset="./images/ScreenIllustrations.jpg 1x, ./images/ScreenIllustrations@2.jpg 2x"
                   src="./images/ScreenIllustrations.jpg"
                   alt="image for Screen Illustrations" 
-                />
+                  width="360"
+                  height="300"
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -719,10 +734,12 @@
               <div class="box">
                 <img 
                   class="our-portfolio-img" 
-                  srcset="./images/OnlineCourses.jpg 1x, ./images/OnlineCourses.jpg 2x"
+                  srcset="./images/OnlineCourses.jpg 1x, ./images/OnlineCourses@2.jpg 2x"
                   src="./images/OnlineCourses.jpg"
                   alt="image for Online Courses" 
-                />
+                  width="360"
+                  height="300"
+                >
                 <div class="overlay"><p>text for overlay</p></div>
               </div>
               <div class="our-portfolio-block">
@@ -786,8 +803,8 @@
           <div class="footer-column">
             <form class="footer-subscribe">
               <span class="footer-input-label">
-                <label class="footer-sl-text" for="mail">Subscribe</label>
-                <input class="footer-input" type="email" name="mail" placeholder="E-mail" />
+                <label class="footer-sl-text" for="fmail">Subscribe</label>
+                <input id="fmail" class="footer-input" type="email" name="mail" placeholder="E-mail">
               </span>
               <button class="footer-button" type="submit">
                 Subscribe
@@ -820,7 +837,7 @@
               <svg class="icon icon-modal" height="24" width="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input class="modal-input" type="text" name="username" />
+              <input class="modal-input" type="text" name="username">
             </label>
           </div>
           <div class="modal-input-border">
@@ -829,7 +846,7 @@
               <svg class="icon icon-modal" height="24" width="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input class="modal-input" type="tel" name="phone" />
+              <input class="modal-input" type="tel" name="phone">
             </label>
           </div>
           <div class="modal-input-border">
@@ -838,7 +855,7 @@
               <svg class="icon icon-modal" height="24" width="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input class="modal-input" type="email" name="mail" />
+              <input class="modal-input" type="email" name="mail">
             </label>
           </div>
 
@@ -862,7 +879,7 @@
                   id="checkbox"
                   name="modal-checkbox"
                   value="agree"
-                />
+                >
 
                 <svg class="icon icon-default-chbox" width="16" height="16">
                   <use href="./images/icons.svg#icon-default-chbox"></use>
