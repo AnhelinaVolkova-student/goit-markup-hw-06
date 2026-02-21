@@ -79,8 +79,8 @@ img {
 }
 
 .container {
-    min-width: 320px;
     width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -125,7 +125,8 @@ header .container{
 .logo--header {
     color: #2E2F42;
     /*margin-right: 76px;*/
-    padding: 24px 0;
+    
+    padding: 16px 0;
 }
 
 .navigation,
@@ -224,7 +225,7 @@ header .container{
     width: 24px;
     height: 24px;
     padding: 0;
-    background-color: #FFFFFF;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
@@ -459,6 +460,7 @@ header .container{
 .our-portfolio-item{
     /*width: calc((100% - 48px) / 3);*/
     width: 100%;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1034,6 +1036,10 @@ body {
 @media (min-width: 768px) {
     .container {
         max-width: 768px;
+    }
+
+    .logo--header{
+        padding: 24px 0;
     }
 
     .burger-button {
